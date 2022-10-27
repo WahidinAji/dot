@@ -33,7 +33,7 @@ go run .
 * [MySQL](https://www.mysql.com/)
 * [gorm](https://gorm.io/)
 
-# Fitur
+# Feature
 * Automatically migrate table and column
 
 # Endpoints
