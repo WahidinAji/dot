@@ -15,7 +15,7 @@ type EmployeeDeps struct {
 	Cache *bigcache.BigCache
 }
 type EmployeeIn struct {
-	Name string `json:"name"`
+	Name string `json:"name" form:"name"`
 }
 type EmployeeOut struct {
 	Id   uint   `json:"id"`
