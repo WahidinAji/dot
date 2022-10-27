@@ -1,0 +1,32 @@
+version: '3.9'
+
+services:
+  # typesense:
+  #   image: typesense/typesense:0.24.0.rcn21
+  #   command: ./typesense-server --data-dir=/data --api-key=123
+  #   volumes:
+  #     - ./typesense-data:/data
+  #   ports:
+  #     - "9108:8108"
+  cockroach:
+    image: cockroachdb/cockroach:latest
+    volumes:
+       - ./cockroach-data:/data
+    command: start-single-node --insecure --accept-sql-without-tls
+    ports:
+       - "26257:26257"
+       - "8080:8080"
+
+#    db:
+#     image: postgres:latest
+#     volumes:
+#       - dbdata:/var/lib/postgresql/data 
+#     ports:
+#       - 5432:5432
+#     environment: 
+#       POSTGRES_USER: "root"
+#       POSTGRES_PASSWORD: "password"
+#       POSTGRES_DB: "anu"
+    
+# volumes:
+#   dbdata:
