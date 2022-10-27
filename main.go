@@ -63,6 +63,9 @@ func main() {
 	employee := employee.EmployeeDeps{DB: gormDB}
 	employee.EmployeeRoute(app)
 
+	item := item.ItemDeps{DB: gormDB}
+	item.ItemRoute(app)
+
 	app.Listen(":3000")
 }
 
