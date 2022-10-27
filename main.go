@@ -17,7 +17,6 @@ import (
 )
 
 func main() {
-
 	dsn, ok := os.LookupEnv("MYSQL_URL")
 	if !ok {
 		log.Printf("you need to set MYSQL_URL environment variable")

@@ -4,6 +4,11 @@ CREATE DATABASE dotdb
     DEFAULT CHARACTER SET = 'utf8mb4';
 ```
 
+# Clone this repository
+```bash
+git clone https://github.com/WahidinAji/dot.git
+```
+
 # Environment variable
 ```bash
 cp .running.sh.example .running.sh
